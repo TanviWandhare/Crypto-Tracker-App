@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header{
+    background-color: #333;
+    padding:0 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
+}
+
+.left-nav{
+    margin-left: 1.25rem;
+    color:rgb(245, 124, 43);
+}
+
+.right-nav{
+    margin-right: 2rem;
+    display: flex;
+    gap:0.625rem;
+}
+
+.right-nav button{
+    background-color:rgb(243, 111, 23);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right-nav button a{
+    text-decoration: none;
+    color:white;
+}
+
+.right-nav input{
+    width:12.5rem;
+    padding: 0.625rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-container{
+    position:relative;
+    width: 12.5rem;
+}
+
+.search-icon{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);   
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+
+/* dialog box */
+.dialog-box{
+    position: absolute;
+    top:calc(100% + 0.625rem);
+    width:100%;
+    height:550px;
+    padding: 0 1rem;
+    background-color: rgb(238, 234, 234);
+    z-index:1000;
+    border-radius: 0.625rem;
+    box-shadow: 0.5px 0.5px 6px 4px rgb(243, 111, 23);
+    display: none;
+}
+
+.search-content{
+    height:86%;
+    overflow-y: scroll;
+}
+
+.search-content ul {
+    padding-left: 0;   
+    margin: 0;         
+}
+
+.search-title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.25rem;
+}
+
+.search-content li{
+    list-style: none;
+    padding: 0.6rem 3rem;
+    display: flex;
+    align-items: center;
+    gap:1.25rem;
+    cursor: pointer;
+} 
+
+.search-content li:hover{
+    background-color:rgb(224, 183, 155);
+    cursor:pointer;
+}
+
+.search-icon,
+.close-icon{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* table styling */
+table{
+    width:100%;
+    margin-top: 0.625rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+  border: 0.031rem solid rgb(100, 98, 98);
+}
+
+table th{
+    background-color: lightgray;
+}
+
+.fa-arrow-up{
+    cursor: pointer;
+}
+
+.fa-arrow-down{
+    cursor: pointer;
+}
+
+.no-data{
+    display: none;
+    text-align: center;
+}
+
+/* hover */
+tr:hover {
+  background-color: rgba(233, 229, 229, 0.925);
+  cursor: pointer;
+}
+
+th{
+    cursor: default;
+}
+
+.fa-star {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.fa-star:hover {
+  transform: scale(1.25);
+  color: rgb(255, 80, 0);
+}
+
+/* pagination button */
+.pagination{
+    margin:1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.25rem;
+}
+
+.pagination button{
+    background-color:rgb(243, 111, 23);
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.disabled-btn {
+    background-color: burlywood !important;
+    cursor: none;
+}
+
+.shimmer-container{
+    display:none;
+    width:100%;
+    height:31.25rem;
+    background: linear-gradient(
+        to left, 
+        lightgray 0%,           
+        white 50%, 
+        lightgray 100%
+    );
+    animation: shimmer-animation 1.5s infinite;
+}
+
+@keyframes shimmer-animation{
+    0%{
+        background-position: 100%, 0px;
+    }
+    100%{
+        background-position: -100%, 0px;
+    }
+}
+
+/* media query */
+@media screen and (max-width:48rem){
+header{
+    padding:0.4rem 0.8rem;
+    width: 100%;
+}
+
+.left-nav{
+    margin-left: 0.5rem;
+}
+
+.left-nav h1{
+    font-size: 1.5rem;
+}
+
+.right-nav{
+    margin-right: 0.5rem;
+    display: flex;
+    gap:0.625rem;
+}
+
+.right-nav button{
+    margin-top: 0.625;
+    margin-bottom: 0.625;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+}

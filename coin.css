@@ -1,0 +1,144 @@
+#coin-container {
+    width: 100%;
+    height: 100vh;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center; 
+    align-items: center;       
+}
+
+.sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.right-chart {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container button.active {
+    background-color: #ee6a1d;
+    color: white;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    text-align: justify;
+}
+
+.coin-data{
+    width:100%;
+}
+
+.market-data-item {
+    display: flex;
+    align-self: flex-start;
+    column-gap: 70px;
+    justify-content: space-between !important;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #F16222;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #ff7643;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#add-fav-btn {
+    border: none;
+    padding: 10px 15px;
+    background-color: #F16222;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+@media screen and (max-width:48rem){
+#coin-container {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 8rem;  
+    gap: 1.5rem;    
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.coin-data{
+    width:100%;
+}
+
+.right-chart {
+    width: 100%;
+}
+
+.description {
+    text-align: center;
+}
+}

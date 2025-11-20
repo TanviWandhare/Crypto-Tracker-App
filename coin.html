@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Details</title>
+    <link rel="stylesheet" href="coin.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+</head>
+<body>
+    <header>
+        <div class="left-nav">
+            <h1>CRYPTO TRACKER</h1>
+        </div>
+        <div class="right-nav">
+            <button><a href="index.html" class="nav-link">Home</a></button>
+            <button><a href="fav.html" class="nav-link">Liked Coins</a></button>
+        </div>
+    </header>
+    <div class="shimmer-container" style="display: none;">
+        <div class="shimmer"></div>
+    </div>
+    <div id="coin-container" class="container" style="display: none;">
+        <div id="sidebar" class="sidebar">
+            <img id="coin-image" src="" alt="Coin Image">
+            <h3 id="coin-name" class="heading"></h3>
+            <p id="coin-desc" class="description">
+                 <!-- des dynamicaaly -->
+            </p>
+            <div id="coin-data" class="coin-data">
+                <div class="market-data-item">
+                    <span class="heading">Rank:</span>
+                    <span id="coin-rank" class="coin-data-item"></span>
+                </div>
+                <div class="market-data-item">
+                    <span class="heading">Current Price:</span>
+                    <span id="coin-price" class="coin-data-item"></span>
+                </div>
+                <div class="market-data-item">
+                    <span class="heading">Market Cap:</span>
+                    <span id="coin-cap" class="coin-data-item"></span>
+                </div>
+                
+                <div class="button-wrapper">
+                    <button id="add-fav-btn">Add to Favorites</button>
+                </div>
+            </div>
+        </div>
+        <div id="coinchart" class="right-chart">
+            <div class="btn-container">
+                <button id="24h">24h</button>
+                <button id="30d">30d</button>
+                <button id="3m">3m</button>
+            </div>
+            <canvas id="coinChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="coin.js"></script>
+</body>
+</html>

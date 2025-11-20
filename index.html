@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="crypto, tracker, coin, currency">
+    <title>Cryptocurrency Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="left-nav">
+            <h1>CRYPTO TRACKER</h1>
+        </div>
+        <div class="right-nav">
+            <button><a href="index.html" class="nav-link">Home</a></button>
+            <button><a href="fav.html" class="nav-link">Liked Coins</a></button>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search Coins.."/>
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <div class="dialog-box">
+                    <div class="search-title">
+                        <h2>Search Result</h2>
+                        <i class="fa-solid fa-xmark close-icon"></i>
+                    </div>
+                    <div class="search-content">
+                        <ul>        
+                        <!-- search list fetch dynamically -->
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+     <main>
+        <div class="shimmer-container">
+            <!-- shimmer -->
+        </div>
+
+        <table cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Price
+                        <i class="fa-solid fa-arrow-up sort-price-asc"></i>
+                        <i class="fa-solid fa-arrow-down sort-price-desc"></i>
+                    </th>
+                    <th>Volume
+                        <i class="fa-solid fa-arrow-up sort-volume-asc"></i>
+                        <i class="fa-solid fa-arrow-down sort-volume-desc"></i>
+                    </th>
+                    <th>Market Cap
+                        <i class="fa-solid fa-arrow-up cap-sort-asc"></i>
+                        <i class="fa-solid fa-arrow-down cap-sort-desc"></i>
+                    </th>
+                    <th>Favourite</th>
+                </tr>
+            </thead>
+            <tbody>
+               <!-- body fetch dynamically -->
+            </tbody>
+        </table>
+        <h3 class="no-data">No Data Found</h3>
+        <div class="pagination">
+            <button class="prev-btn disabled-btn" >Prev</button>
+            <button class="next-btn disabled-btn">Next</button>
+        </div>
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>

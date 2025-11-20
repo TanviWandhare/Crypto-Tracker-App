@@ -6,47 +6,47 @@ Users can view live crypto prices, market cap, volume, sort data, search coins, 
 ## 🚀 Features
 
 **✔ Real-Time Crypto Data**
-+Live price, market cap & volume
-+Pagination (25 coins per page)
-+Shimmer loading UI
++ Live price, market cap & volume
++ Pagination (25 coins per page)
++ Shimmer loading UI
 
 **✔ Search Functionality**
-+Search-as-you-type (Debounced API search)
-+Auto navigate to coin details
-+Beautiful search dialog box
++ Search-as-you-type (Debounced API search)
++ Auto navigate to coin details
++ Beautiful search dialog box
 
 **✔ Sorting**
-+Sort using:
-+Price (Asc/Desc)
-+Volume (Asc/Desc)
-+Market Cap (Asc/Desc)
++ Sort using:
++ Price (Asc/Desc)
++ Volume (Asc/Desc)
++ Market Cap (Asc/Desc)
 
 **✔ Favourite Coins**
-+Add/remove favourites with star icon
-+Stored in localStorage
-+Separate fav.html page
-+Pagination for favourite coins
-+Sorting for favourite list
++ Add/remove favourites with star icon
++ Stored in localStorage
++ Separate fav.html page
++ Pagination for favourite coins
++ Sorting for favourite list
 
 **✔ Coin Details Page**
-+Price, volume & market cap
-+Historical data chart (via Chart.js)
-+Well-organized layout
++ Price, volume & market cap
++ Historical data chart (via Chart.js)
++ Well-organized layout
 
 **✔ Fully Responsive**
-+Clean UI
++ Clean UI
 
 
 **🛠️ Tech Stack**
-+HTML5
-+CSS3
-+JavaScript (Vanilla JS)
-+CoinGecko API
-+Chart.js
-+LocalStorage
++ HTML5
++ CSS3
++ JavaScript (Vanilla JS)
++ CoinGecko API
++ Chart.js
++ LocalStorage
 
 
 ### 🙌 Author
 **Tanvi Wandhare**
-+Front-End Developer
-+Skills: HTML, CSS, JavaScript, API Integration
++ Front-End Developer
++ Skills: HTML, CSS, JavaScript, API Integration

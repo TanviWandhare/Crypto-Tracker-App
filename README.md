@@ -1,9 +1,9 @@
-#CRYTO TRACKER APP – Real-Time Cryptocurrency Dashboard
+# CRYTO TRACKER APP – Real-Time Cryptocurrency Dashboard
 
 A fully responsive cryptocurrency tracking web application built using **HTML**, **CSS**, and **JavaScript**, powered by **CoinGecko API**.
 Users can view live crypto prices, market cap, volume, sort data, search coins, add/remove favourites, and view detailed charts for each coin.
 
-##🚀 Features
+## 🚀 Features
 
 **✔ Real-Time Crypto Data**
 +Live price, market cap & volume
@@ -46,7 +46,7 @@ Users can view live crypto prices, market cap, volume, sort data, search coins, 
 +LocalStorage
 
 
-###🙌 Author
+### 🙌 Author
 **Tanvi Wandhare**
 +Front-End Developer
 +Skills: HTML, CSS, JavaScript, API Integration
